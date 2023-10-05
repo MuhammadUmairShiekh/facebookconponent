@@ -2,19 +2,25 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-.data{
-  margin: auto;
-  padding: 5rem;
-  width: 60%;
 
+}
+
+
+.data{
+  padding: 5rem;
+  /* width: 50%; */
+  background-color: rgba(201, 201, 201, 0.385);
 }
 
 .main{
+  margin: auto;
   background-color: #ecf0f1;  
-  width: 100%;
+  outline: none;
+  border: none;
+  width: 50%;
   min-height: 100vh;
   position: relative;
+  box-shadow: 0px 0px  2px black;
   
 }
 .avatar{
@@ -55,4 +61,73 @@
   position: absolute;
   top: 3rem;
   right: 0;
+}
+.line{
+  width: 94%;
+  margin: auto;
+  border-top: 1px solid rgb(138, 138, 138);
+
+}
+.Bttn{
+  padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+  /* margin: 20px; */
+  
+
+  
+}
+
+.Bttn button{
+  width: 13rem;
+  border: none;
+  padding: 7px;
+  cursor: pointer;
+  background-image: url(../public/images/icons8-thumbs-up-24.png);
+  background-size: 15%;
+  background-position:left;
+  background-repeat: no-repeat;  
+}
+.comBtn{
+  background-image: url(../public/images/icons8-comment-32.png);
+  background-size: 15%;
+  background-position:left;
+  background-repeat: no-repeat;  
+}
+.shareBtn{
+  background-image: url(../public/images/icons8-share-48.png);
+  background-size: 15%;
+  background-position:left;
+  background-repeat: no-repeat;  
+}
+.Bttn p{
+  width: 13rem;
+  cursor: pointer;
+  padding: 7px;
+
+}
+.Bttn button:hover{
+  background-color: rgb(207, 207, 207);
+ 
+}
+.Bttn p:hover{
+  background-color: rgb(207, 207, 207); 
+ 
+}
+.emoji{
+  /* display: none; */
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  position: absolute;
+  top: -3rem;
+  opacity: 0;
+}
+
+.Bttn:hover .emoji{
+  opacity: 1;
+
 }

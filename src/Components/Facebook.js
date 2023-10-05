@@ -1,4 +1,6 @@
 import FbImageLibrary from 'react-fb-image-grid'
+import Custombtn from './Custombtn'
+
 
 
 function Facebook(props) {
@@ -24,16 +26,17 @@ function Facebook(props) {
                     {/* <p>{date}</p> */}
                 </div>
                 <div className="images-post" >
-                
-                <FbImageLibrary images={profilePic}/>
+
+                    <FbImageLibrary images={profilePic} />
 
                     {/* <img  src={profilePic} /> */}
                 </div>
+
                 <div>
-                👍 Like
+                    <Custombtn btnName= "Like" comment="Comment" share="Share" />
+                </div>
             </div>
-            </div>
-            
+
         </div>
 
     )
